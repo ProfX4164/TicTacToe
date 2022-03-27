@@ -4,9 +4,9 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class TicTacToe {
-    private static final String AI_WIN_MSG = "Победил компьютер!";
-    private static final String HUMAN_WIN_MSG = "Победил человек!";
-    private static final String DRAW_MSG = "Ничья!";
+    private static final String AI_WIN_MSG = "Computer win!";
+    private static final String HUMAN_WIN_MSG = "Human win!";
+    private static final String DRAW_MSG = "Standoff!";
 
     private static final char DOT_X = 'X';
     private static final char DOT_O = 'O';
