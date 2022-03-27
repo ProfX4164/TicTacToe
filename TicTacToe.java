@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -157,7 +158,7 @@ public class TicTacToe {
     }
 
     private static void humanTurn() {
-        System.out.println("Введите координаты row col: ");
+        System.out.println("Enter coordinates row col: ");
         int row = 0;
         int col = 0;
         do {
@@ -166,14 +167,14 @@ public class TicTacToe {
 
 
             if (!checkRange(row) || !checkRange(col)) {
-                System.out.println("координаты должны быть в диапазоне от 1 до " + SIZE);
+                System.out.println("Coordinates required from 1 to " + SIZE);
                 continue;
             }
 
             if (isEmptyCell(row - 1, col - 1)) {
                 break;
             } else {
-                System.out.println("Клетка уже занята!");
+                System.out.println("Field already taken!");
             }
         } while (true);
 
@@ -186,7 +187,7 @@ public class TicTacToe {
 
     private static int readIndex() {
         while (!scanner.hasNextInt()) {
-            System.out.println("Координаты должны иметь целочисленное значение!");
+            System.out.println("Coordinates must be integer!");
             scanner.next();
         }
 
